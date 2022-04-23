@@ -1,13 +1,13 @@
 package token_jwt
 
 import (
-	"github.com/chefsgo/chef"
+	"github.com/chefsgo/token"
 )
 
-func Driver() chef.TokenDriver {
-	return &jwtTokenDriver{}
+func Driver() token.Driver {
+	return &jwtDriver{}
 }
 
 func init() {
-	chef.Register("jwt", Driver())
+	token.Register("jwt", Driver())
 }

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/chefsgo/chef"
+	"github.com/chefsgo/token"
 )
 
 var (
@@ -14,7 +14,7 @@ var (
 type (
 	jwtClaims struct {
 		available bool
-		*chef.Token
+		Token     *token.Token
 	}
 )
 
